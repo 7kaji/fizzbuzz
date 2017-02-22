@@ -1,10 +1,7 @@
-box: ruby:2.3
+box: wercker/rvm@8.0.0
 build:
     steps:
-        - wercker/install-packages@1.0.0
-        - install-packages:
-            packages: cmake
-        - bundle-install
+        - wercker/bundle-install@2.0.1
         - script:
             name: echo ruby information
             code: |
