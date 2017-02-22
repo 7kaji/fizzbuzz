@@ -1,6 +1,7 @@
 box: ruby:2.3
 build:
     steps:
+        - wercker/install-packages@1.0.0
         - install-packages:
             packages: cmake
         - bundle-install
