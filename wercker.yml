@@ -1,6 +1,8 @@
 box: ruby:2.3
 build:
     steps:
+        - install-packages:
+            packages: cmake
         - bundle-install
         - script:
             name: echo ruby information
