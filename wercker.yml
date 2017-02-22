@@ -1,7 +1,7 @@
-box: wercker/rvm@8.0.0
+box: phusion/passenger-ruby22
 build:
     steps:
-        - wercker/bundle-install@2.0.1
+        - bundle-install
         - script:
             name: echo ruby information
             code: |
