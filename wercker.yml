@@ -2,6 +2,8 @@
 box: wercker/ruby
 build:
     steps:
+        - rvm-use:
+              version: ruby-2.3.1
         - bundle-install
         - script:
             name: echo ruby information
